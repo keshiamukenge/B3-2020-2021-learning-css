@@ -1,0 +1,78 @@
+:root {
+    --oneColor: #E39774;
+    --twoColor: #5C9EAD;
+    --blackColor: #32373B;
+    --whiteColor: #ffffff;
+    
+    --smallText: 12px;
+      --normalText: 16px;
+      --bigText: 18px;
+      --xxltext: 24px;
+    }
+
+body{
+    font-family: 'Open sans', sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    font-family: 'Courier prime';
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+h2{
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    color: var(--whiteColor);
+    font-size: 40px;
+}
+
+h3{
+    font-family: 'Open sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 200px;
+    line-height: 2;
+}
+
+.btn{
+    font-size: 14px;
+    margin: auto;
+    transition: 200ms ease-in-out;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.btn::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--blackColor);
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: btn-anim 1000ms ease-in-out infinite;
+}
+
+@keyframes btn-anim{
+    from{
+        bottom: 50px;
+    } to {
+        bottom: 10px;
+    }
+}
+
+.description{
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--blackColor);
+}

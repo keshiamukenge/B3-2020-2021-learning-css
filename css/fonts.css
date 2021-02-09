@@ -1,0 +1,18 @@
+html {
+  font-size: 100%;
+} /*16px*/
+
+body {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+h1{
+  color: var(--blackColor);
+  font-family: 'Courier prime';
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px 0 0 30px;
+  position: absolute;
+}

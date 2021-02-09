@@ -1,0 +1,224 @@
+/* Style et animation cube 3d */
+#container-cube{
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+#cube{
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: cube-rotate 10s infinite linear;
+}
+
+#cube li{
+    list-style: none;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+}
+
+.top{
+    transform: rotateX(90deg) translateZ(125px);
+}
+
+.bottom{
+    transform: rotateX(-90deg) translateZ(125px);
+}
+
+.left{
+    transform: rotateY(-90deg) translateZ(125px);
+}
+
+.right{
+    transform: rotateY(90deg) translateZ(125px);
+}
+
+.front{
+    transform: rotateX(0deg) translateZ(125px);
+}
+
+.back{
+    transform: rotateX(-180deg) translateZ(125px);
+}
+
+#cube li img{
+    width: 100%;
+}
+
+@keyframes cube-rotate{
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    } to{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.grid-home{
+    width: 100%;
+    height: 650px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50%);
+}
+
+.content-grid-home{
+    width: 100%;
+    height: 100%;
+    padding: 100px 0 0 50px;
+}
+
+#container-cube{
+    width: 100%;
+    height: 100%;
+}
+
+#container-cube{
+    padding-top: 3em;
+}
+
+
+
+
+#grid-personnalites{
+    margin: 5em 0 0 3em;
+}
+
+#container-text-personnalites ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.description{
+    width: 80%;
+}
+
+#grid-personnalites{
+    max-width: 1000px;
+    width: 80%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 100px 80px;
+    margin: 200px auto;
+    justify-content: center;
+}
+
+.grid-item{
+    width: 100%;
+}
+
+.container-link{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    background-color: var(--oneColor);
+    padding: 5px;
+    position: relative;
+   bottom: 33px;
+   z-index: -1;
+}
+
+.link-personnalites-site{
+    color: var(--blackColor);
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item:hover .container-link{
+    transition: 500ms ease-in-out;
+    transform: translateY(40px);
+}
+
+
+
+#container-rond {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: linear-gradient(90deg, rgba(227,151,116,1) 0%, rgba(92,158,173,1) 100%);
+}
+  
+span {
+    background: radial-gradient(circle, rgba(92,158,173,1) 0%, rgba(227,151,116,1) 100%);
+      position: absolute;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    
+.rond {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+    
+.rond:nth-child(1) {
+      position: absolute;
+      animation: skewing-child .2s ease-in-out infinite alternate;
+    }
+
+    .rond:nth-child(1) span {
+        width: 100px;
+        height: 100px;
+        margin: -25px;
+        animation: moving 2s cubic-bezier(.97,.01,.12,.99) infinite alternate;
+      }
+    
+.rond:nth-child(2) {
+      position: absolute;
+      animation: squishing 1s ease-in-out infinite alternate;
+    } 
+
+    .rond:nth-child(2) span {
+    width: 300px;
+    height: 300px;
+        top: 50%;
+        left: 50%;
+        margin: -60px;
+        animation: skewing 2s 1.5s ease-in-out infinite;
+      }
+
+  
+  @keyframes skewing {
+    0% { transform: skewX(6deg); }
+    10% { transform: skewX(-6deg); }
+    20% { transform: skewX(4deg); }
+    30% { transform: skewX(-4deg); }
+    40% { transform: skewX(2deg); }
+    50% { transform: skewX(-6deg); }
+    55% { transform: skewX(6deg); }
+    60% { transform: skewX(-5deg); }
+    65% { transform: skewX(5deg); }
+    70% { transform: skewX(-4deg); }
+    75% { transform: skewX(4deg); }
+    80% { transform: skewX(-3deg); } 
+    85% { transform: skewX(3deg); }
+    90% { transform: skewX(-2deg); } 
+    95% { transform: skewX(2deg); }
+    100%   { transform: skewX(1deg); }
+  }
+  
+  @keyframes skewing-child {
+    0%      { transform: skewX(-10deg); }
+    100%     { transform: skewX(10deg); }
+  }
+  
+  @keyframes moving {
+    0% {transform: translate(-200px);}
+    30% {transform: translate(-45px);} 
+    70% {transform: translate(45px);}
+    100% {transform: translate(200px);}
+  }
+  
+  @keyframes squishing {
+    10%, 40%, 80% { transform: scale(1, .9); }
+    0%, 30%, 60%, 100% {transform: scale(.9, 1);}
+  }
+  
+
+
