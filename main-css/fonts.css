@@ -3,45 +3,50 @@
     --twoColor: #5C9EAD;
     --blackColor: #32373B;
     --whiteColor: #ffffff;
-    
-    --smallText: 12px;
-      --normalText: 16px;
-      --bigText: 18px;
-      --xxltext: 24px;
-    }
 
-body{
+    --smallText: 12px;
+    --normalText: 16px;
+    --bigText: 18px;
+    --xxltext: 24px;
+}
+
+body {
     font-family: 'Open sans', sans-serif;
     font-size: 16px;
 }
 
-h1{
+h1 {
     font-family: 'Courier prime';
     font-size: 18px;
     font-weight: 400;
     margin-top: 15px;
 }
 
-h2{
+h2 {
     font-family: 'Open sans', sans-serif;
     font-weight: 400;
     color: var(--whiteColor);
     font-size: 40px;
 }
 
-h3{
+h3 {
     font-family: 'Open sans', sans-serif;
     font-size: 20px;
     font-weight: 400;
+    background: linear-gradient(90deg, rgba(227, 151, 116, 1) 0%, rgba(92, 158, 173, 1) 100%);
+    padding: 20px;
+    color: var(--whiteColor);
+    border-radius: 10px;
+    text-transform: uppercase;
 }
 
-p{
+p {
     font-size: 14px;
     font-weight: 200px;
     line-height: 2;
 }
 
-.btn{
+.btn {
     font-size: 14px;
     margin: auto;
     transition: 200ms ease-in-out;
@@ -50,7 +55,7 @@ p{
     height: 50px;
 }
 
-.btn::before{
+.btn::before {
     content: "";
     width: 10px;
     height: 10px;
@@ -63,15 +68,17 @@ p{
     animation: btn-anim 1000ms ease-in-out infinite;
 }
 
-@keyframes btn-anim{
-    from{
+@keyframes btn-anim {
+    from {
         bottom: 50px;
-    } to {
+    }
+
+    to {
         bottom: 10px;
     }
 }
 
-.description{
+.description {
     font-size: 20px;
     font-weight: 300;
     color: var(--blackColor);

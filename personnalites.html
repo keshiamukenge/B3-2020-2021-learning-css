@@ -11,15 +11,33 @@
 
 <body>
     <header>
-        <nav>
-            <h1><a href="index.html">Learning CSS</a></h1>
+        <h1>Learning CSS</h1>
+        <a href="#main-menu">
+            <svg class="menu" id="menu-svg" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <path class="path-svg"
+                    d="M255,483C129.6,483,28,381.4,28,256S129.6,29,255,29s227,101.6,227,227S380.4,483,255,483z" />
+                <line class="line-svg" x1="166.5" y1="170.7" x2="345.5" y2="170.7" />
+                <line class="line-svg" x1="166.5" y1="256" x2="345.5" y2="256" />
+                <line class="line-svg" x1="166.5" y1="341.3" x2="345.5" y2="341.3" />
+            </svg>
+        </a>
+        <nav id="main-menu">
+            <a class="close" href="#">
+                <svg class="close-svg" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                    xml:space="preserve">
+                    <path class="path-svg" d="M409.1,409c-84.4,84.4-221.7,84.4-306,0c-40.9-40.9-63.4-95.2-63.4-153S62.2,143.9,103,103
+                       c84.4-84.4,221.7-84.4,306,0C493.4,187.4,493.4,324.7,409.1,409z" />
+                    <line class="line-svg" x1="173" y1="170.6" x2="341.4" y2="339" />
+                    <line class="line-svg" x1="173" y1="338.9" x2="341.4" y2="170.5" />
+                </svg>
+            </a>
             <ul>
                 <li class="item-menu"><a href="#">Nouveautés CSS</a></li>
                 <li class="item-menu"><a href="personnalites.html">Personnalités</a></li>
                 <li class="item-menu"><a href="#">Jen Simmons</a></li>
                 <li class="item-menu"><a href="mentions-legales.html">Mentions légales</a></li>
-                <li class="icon-menu"><a href="#"><img src="img/icons/icon-menu.svg"></a></li>
             </ul>
+
         </nav>
     </header>
 
@@ -63,14 +81,23 @@
 
         <div class="grid-item">
             <img class="personnalites-face" src="css/img/photos/chriscoyier.jpg">
-            <div class="container-link"><a class="link-personnalites-site" href="https://chriscoyier.net/">chriscoyier.net</a></div>
+            <div class="container-link"><a class="link-personnalites-site"
+                    href="https://chriscoyier.net/">chriscoyier.net</a></div>
         </div>
 
         <div class="grid-item">
             <h3>Jen Simmons</h3>
-            <p>Jen Simmons est une graphiste, développeur web, éducatrice et conférencière reconnue pour son expertise des standards web, en particulier HTML et CSS. Elle est membre du groupe de travail CSS créé par le World Wide Web Consortium et a joué un rôle de premier plan dans le déploiement de la disposition de grille CSS. Simmons est actuellement un concepteur et un défenseur des développeurs chez Mozilla , où elle a conçu le Grid Inspector du navigateur Firefox. Simmons dirige la chaîne YouTube "Layout Land" et a inventé le terme «conception intrinsèque» pour faire référence à sa philosophie des mises en page Web qui mélangent une mise en page fixe, de taille de contenu et fluide. Elle est une conférencière fréquente lors d'événements tels qu'un événement à part , au sud par le sud - ouest , Fluent et SmashingConf . </p>
+            <p>Jen Simmons est une graphiste, développeur web, éducatrice et conférencière reconnue pour son expertise
+                des standards web, en particulier HTML et CSS. Elle est membre du groupe de travail CSS créé par le
+                World Wide Web Consortium et a joué un rôle de premier plan dans le déploiement de la disposition de
+                grille CSS. Simmons est actuellement un concepteur et un défenseur des développeurs chez Mozilla , où
+                elle a conçu le Grid Inspector du navigateur Firefox. Simmons dirige la chaîne YouTube "Layout Land" et
+                a inventé le terme «conception intrinsèque» pour faire référence à sa philosophie des mises en page Web
+                qui mélangent une mise en page fixe, de taille de contenu et fluide. Elle est une conférencière
+                fréquente lors d'événements tels qu'un événement à part , au sud par le sud - ouest , Fluent et
+                SmashingConf . </p>
         </div>
-         
+
         <div class="grid-item">
             <img src="css/img/photos/jensimmons.jpg">
             <div class="container-link"><a class="link-personnalites-site" href="#">Site web</a></div>
@@ -79,9 +106,15 @@
         <div class="grid-item">
 
             <h3>Lea Verou</h3>
-            <p>Lea Verou, née le 13 juin 1986) est une développeur web front-end, conférencière et auteur, originaire de Lesbos, Grèce. Verou est actuellement assistante de recherche au MIT CSAIL, dans David Karger du groupe Haystack et un expert invité dans le CSS du W3C Groupe de travail.
+            <p>Lea Verou, née le 13 juin 1986) est une développeur web front-end, conférencière et auteur, originaire de
+                Lesbos, Grèce. Verou est actuellement assistante de recherche au MIT CSAIL, dans David Karger du groupe
+                Haystack et un expert invité dans le CSS du W3C Groupe de travail.
 
-                Verou a écrit un livre sur les CSS avancés pour O'Reilly, a travaillé pour W3C / MIT, donné plus de 60 conférences invitées à travers le monde, a publié plusieurs projets open source et a co-fondé une startup grecque appelé Fresset Ltd (qu'elle a quitté en 2011), entre autres projets. Elle a écrit des articles pour plusieurs magazines dans l'industrie de conception Web, y compris A List Apart et Smashing Magazine.
+                Verou a écrit un livre sur les CSS avancés pour O'Reilly, a travaillé pour W3C / MIT, donné plus de 60
+                conférences invitées à travers le monde, a publié plusieurs projets open source et a co-fondé une
+                startup grecque appelé Fresset Ltd (qu'elle a quitté en 2011), entre autres projets. Elle a écrit des
+                articles pour plusieurs magazines dans l'industrie de conception Web, y compris A List Apart et Smashing
+                Magazine.
             </p>
         </div>
 
@@ -92,11 +125,19 @@
 
         <div class="grid-item">
             <h3>Sarah Drasner</h3>
-            <p>Sarah Drasner is an award-winning speaker, senior developer advocate at Microsoft, and staff writer at CSS-Tricks. She is also the cofounder of Web Animation Workshops with Val Head. She is the author of a number one new release for programming books on Amazon, SVG Animations from O'Reilly Media, and has given front-end masters workshops on Vue.js and advanced SVG animations.
+            <p>Sarah Drasner is an award-winning speaker, senior developer advocate at Microsoft, and staff writer at
+                CSS-Tricks. She is also the cofounder of Web Animation Workshops with Val Head. She is the author of a
+                number one new release for programming books on Amazon, SVG Animations from O'Reilly Media, and has
+                given front-end masters workshops on Vue.js and advanced SVG animations.
 
-                Drasner is formerly manager of UX Design & Engineering at Trulia (Zillow). She won the CSS Dev Conference “Best of the Best Award,” as well as “Best Code Wrangler” from the CSS Design Awards. She has worked for fifteen years as a web developer and designer, at points has worked as a scientific illustrator and an undergraduate professor, and has tutored a Byzantine Icon painter in Santorini.
+                Drasner is formerly manager of UX Design & Engineering at Trulia (Zillow). She won the CSS Dev
+                Conference “Best of the Best Award,” as well as “Best Code Wrangler” from the CSS Design Awards. She has
+                worked for fifteen years as a web developer and designer, at points has worked as a scientific
+                illustrator and an undergraduate professor, and has tutored a Byzantine Icon painter in Santorini.
 
-                Drasner is a role model and advocate for her peers and females in her field. She is one of the many leading women emerging as a pioneer in web graphics and development standards, transforming the way interactive web experiences are perceived and shared.
+                Drasner is a role model and advocate for her peers and females in her field. She is one of the many
+                leading women emerging as a pioneer in web graphics and development standards, transforming the way
+                interactive web experiences are perceived and shared.
             </p>
         </div>
 
@@ -108,9 +149,13 @@
         <div class="grid-item">
 
             <h3>Sara Soueidan</h3>
-            <p>Sara Soueidan is a two-time award-winning freelance front-end UI / UX developer, trainer, author and speaker based in Lebanon [2] focusing on HTML5, SVG, CSS, and JavaScript. Soueidan is the author of the Codrops CSS Reference, and a co-author of the Smashing Book #5.
+            <p>Sara Soueidan is a two-time award-winning freelance front-end UI / UX developer, trainer, author and
+                speaker based in Lebanon [2] focusing on HTML5, SVG, CSS, and JavaScript. Soueidan is the author of the
+                Codrops CSS Reference, and a co-author of the Smashing Book #5.
 
-                Soueidan works with companies around the world partnering with design teams to build progressive Web user interfaces and design systems. Primarily focusing on responsive design, performance, and accessibility, using the latest front-end design techniques.
+                Soueidan works with companies around the world partnering with design teams to build progressive Web
+                user interfaces and design systems. Primarily focusing on responsive design, performance, and
+                accessibility, using the latest front-end design techniques.
             </p>
         </div>
 
@@ -121,7 +166,14 @@
 
         <div class="grid-item">
             <h3>Rachel Andrew</h3>
-            <p>Rachel Andrew est une développeur web, auteur et conférencière britannique connue pour son expertise en HTML, CSS, JavaScript et PHP. Elle est une experte invitée du groupe de travail CSS créé par le World Wide Web Consortium. Andrew est également un Google Developer Expert et un ancien membre du Web Standards Project. Elle a commencé à travailler sur le Web en 1996 et est l'auteur de plus de vingt livres sur le développement Web. Andrew est actuellement le rédacteur en chef de Smashing Magazine, un contributeur régulier àA List Apart, et conférencier (notamment à An Event Apart). Elle est également directrice générale et fondatrice de la société de développement Web edgeofmyseat.com. Elle vit à Bristol, Royaume-Uni .</p>
+            <p>Rachel Andrew est une développeur web, auteur et conférencière britannique connue pour son expertise en
+                HTML, CSS, JavaScript et PHP. Elle est une experte invitée du groupe de travail CSS créé par le World
+                Wide Web Consortium. Andrew est également un Google Developer Expert et un ancien membre du Web
+                Standards Project. Elle a commencé à travailler sur le Web en 1996 et est l'auteur de plus de vingt
+                livres sur le développement Web. Andrew est actuellement le rédacteur en chef de Smashing Magazine, un
+                contributeur régulier àA List Apart, et conférencier (notamment à An Event Apart). Elle est également
+                directrice générale et fondatrice de la société de développement Web edgeofmyseat.com. Elle vit à
+                Bristol, Royaume-Uni .</p>
         </div>
 
         <div class="grid-item">
@@ -132,9 +184,13 @@
         <div class="grid-item">
 
             <h3>Val Head</h3>
-            <p>Val Head is a Web Developer, Web Designer and Artist who specializes in User interface (UI) and User experience (UX) Web animation. Val Head is a Published author, curator and design advocate for Adobe.
+            <p>Val Head is a Web Developer, Web Designer and Artist who specializes in User interface (UI) and User
+                experience (UX) Web animation. Val Head is a Published author, curator and design advocate for Adobe.
 
-                Val Head became interested in Web animation and Web standards while learning to work with Adobe Flash animations and ActionScript. Head was the Design Director at Northmaple Studio and Interactive Design Director at Agency 1903. Head is also the Founder of On the Fridge, LLC which produces Web Design Day conference in Pittsburgh PA and a number of Web Design workshops around the country. 
+                Val Head became interested in Web animation and Web standards while learning to work with Adobe Flash
+                animations and ActionScript. Head was the Design Director at Northmaple Studio and Interactive Design
+                Director at Agency 1903. Head is also the Founder of On the Fridge, LLC which produces Web Design Day
+                conference in Pittsburgh PA and a number of Web Design workshops around the country.
 
             </p>
         </div>
@@ -200,4 +256,8 @@
         </div>
 
     </div>
+
+    <footer>
+        <p>©2021/Keshia Mukenge/ECV Digital</p>
+    </footer>
 </body>
