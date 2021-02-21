@@ -10,7 +10,131 @@
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <header>
+        <h1><a href="index.html">Learning CSS</a></h1>
+        <a class='open' href="#main-menu">
+            <svg class="menu" id="menu-svg" x="0px" y="0px" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <path class="path-svg"
+                    d="M255,483C129.6,483,28,381.4,28,256S129.6,29,255,29s227,101.6,227,227S380.4,483,255,483z" />
+                <line class="line-svg" x1="166.5" y1="170.7" x2="345.5" y2="170.7" />
+                <line class="line-svg" x1="166.5" y1="256" x2="345.5" y2="256" />
+                <line class="line-svg" x1="166.5" y1="341.3" x2="345.5" y2="341.3" />
+            </svg>
+        </a>
+        <nav id="main-menu">
+            <a class="close" href="#">
+                <svg class="close-svg" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                    xml:space="preserve">
+
+                    <line class="line-svg" x1="173" y1="170.6" x2="341.4" y2="339" />
+                    <line class="line-svg" x1="173" y1="338.9" x2="341.4" y2="170.5" />
+                </svg>
+            </a>
+            <ul>
+                <li class="item-menu"><a href="nouveautes.html">Nouveautés CSS</a></li>
+                <li class="item-menu"><a href="personnalites.html">Personnalités</a></li>
+                <li class="item-menu"><a href="jensimmons.html">Jen Simmons</a></li>
+                <li class="item-menu"><a href="mentions-legales.html">Mentions légales</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="grid-home">
+        <div class="content-grid-home">
+            <h2>Nouveautés CSS</h2>
+            <p class="description">
+                Découverte de quelques propriétés css pour réaliser des sites web graphiques
+                uniquement en css.
+            </p>
+        </div>
+
+        <div class="container-cube">
+            <code class="code">
+                Découverte des propriétés : "mix-blend-mode" / "persepctive" / "skew"
+            </code>
+        </div>
+    </div>
+
+    <div class="btn">SCROLL</div>
+
+    <div id="container-nouveautes">
+
+        <div class="content-nouveautes">
+            <h3>mix-blend-mode</h3>
+            <p>La propriété mix-blend-mode spécifie la façon dont l'élément source va se mélanger avec l'élément
+                contextuel. Le contexte peut être n'importe quel élément situé en dessous de l'élément source - par
+                exemple un titre pourrait être l'élément source et son container div pourrait être le contexte.</p>
+        </div>
+
+        <div class="content-nouveautes">
+            <code>
+                <ul class="code-propriety">
+                    <li><strong>/* Valeurs de type */ :</strong></li>
+                    <li>mix-blend-mode: normal;</li>
+                    <li>mix-blend-mode: multiply;</li>
+                    <li>mix-blend-mode: screen;</li>
+                    <li>mix-blend-mode: overlay;</li>
+                    <li>mix-blend-mode: darken;</li>
+                    <li>mix-blend-mode: lighten;</li>
+                    <li>mix-blend-mode: color-dodge;</li>
+                    <li>mix-blend-mode: color-burn;</li>
+                    <li>mix-blend-mode: hard-light;</li>
+                    <li>mix-blend-mode: soft-light;</li>
+                    <li>mix-blend-mode: difference;</li>
+                    <li>mix-blend-mode: exclusion;</li>
+                    <li>mix-blend-mode: hue;</li>
+                    <li>mix-blend-mode: saturation;</li>
+                    <li>mix-blend-mode: color;</li>
+                    <li>mix-blend-mode: luminosity;</li>
+                </ul>
+            </code>
+        </div>
+
+        <div class="content-nouveautes">
+            <h3>persepctive</h3>
+            <p>La propriété de Transformation CSS 3D perspective permet d'activer perspective en spécifiant la distance
+                entre "le point de vue" virtuel et le point d'origine Z = 0 sur l'axe de perspective Z.
+                La propriété de Transformation CSS perspective permet en même temps de créer un contexte 3D, c'est à
+                dire que les fils se serviront du "point de vue" comme point de fuite. Permet de donner une perspective
+                aux objets positionnés dans cet espace 3D.</p>
+        </div>
+
+        <div class="content-nouveautes">
+            <code>
+                <ul class="code-propriety">
+                    <li><strong>/* Valeur avec un mot-clé */ :</strong></li>
+                    <li>perspective: none;</li>
+                    <li><strong>/* Type length */ :</strong></li>
+                    <li>perspective: 20px;</li>
+                    <li>perspective: 3.5em;</li>
+                    <li><strong>/* Valeurs globales */ :</strong></li>
+                    <li>perspective: inherit;</li>
+                    <li>perspective: initial;</li>
+                    <li>perspective: unset;</li>
+                </ul>
+            </code>
+        </div>
+
+        <div class="content-nouveautes">
+            <h3>skew</h3>
+            <p>La fonction d'Inclinaison CSS skew() de la propriété de Transformation CSS transform permet d'incliner
+                horizontalement et/ou d'incliner verticalement un élément HTML.</p>
+        </div>
+
+        <div id="last-content-nouveautes" class="content-nouveautes">
+            <code>
+                <ul class="code-propriety">
+                    <li>skew(ax)</li>
+                    <li>skew(ax, ay)</li>
+                </ul>
+            </code>
+        </div>
+
+        <footer>
+            <p>©2021/Keshia Mukenge/ECV Digital</p>
+        </footer>
 </body>
 
 </html>
